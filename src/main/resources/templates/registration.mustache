@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<div>
+    <form method="post" action="register">
+        <div><label><input type="text" name="login" placeholder="Login"></label></div>
+        <div><label><input type="password" name="pass" placeholder="Password"></label></div>
+        <div><label><input type="text" name="nickName" placeholder="NickName"></label></div>
+        <div><label><input type="text" name="mail" placeholder="mail"></label></div>
+        <input type="hidden" name="_csrf" value="{{_csrf.token}}">
+        <div><input type="button" value="Cancel"><input type="submit" value="Register"></div>
+    </form>
+</div>
+</body>
+</html>
