@@ -11,6 +11,7 @@ public class ErrorController implements org.springframework.boot.web.servlet.err
     public String error(Model model) {
         System.err.println("ERROR");
         return "redirect:/main";
+        //return "error";
     }
 }
 //присутствие активность кнопки
